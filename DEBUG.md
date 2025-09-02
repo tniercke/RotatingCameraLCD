@@ -1,21 +1,21 @@
 # Debugging & Running the Plugin (Pulsar)
 
-## 1) Optionaler Deploy
-Wenn `SE_DIR` gesetzt ist, landen Build-Artefakte in:
+## 1) Optional Deploy
+If `SE_DIR` is set, build artifacts will be copied to:
 ```
 %SE_DIR%\Bin64\Plugins\RotatingCameraLCD\
 ```
 
-## 2) Start über Pulsar
-Space Engineers über **Pulsar** starten → **Plugins** → **RotatingCameraLCD** aktivieren → ggf. Neustart.
+## 2) Starting via Pulsar
+Launch Space Engineers through **Pulsar** → go to **Plugins** → enable **RotatingCameraLCD** → restart if necessary.
 
-## 3) Debuggen mit Visual Studio
-- Debug-Build erstellen
-- `Debug → Attach to Process…` → `SpaceEngineers.exe`
-- Breakpoints in `RotatingCameraLCDPlugin.cs`
+## 3) Debugging with Visual Studio
+- Build the project in **Debug** mode.
+- Go to `Debug → Attach to Process…` → select `SpaceEngineers.exe`.
+- Set breakpoints in `RotatingCameraLCDPlugin.cs`.
 
-## 4) Test-Setup im Spiel
-CustomData eines LCDs:
+## 4) In-Game Test Setup
+Example `CustomData` for an LCD:
 ```ini
 [MultiCamera2LCD]
 LcdSurfaceIndex = 0
@@ -24,8 +24,9 @@ NameFontSize = 0.9f
 Camera A | Camera #1
 Camera B | Camera #2
 ```
-Zwei Kamera-Blöcke entsprechend benennen. Du siehst einen rotierenden **Namens-Overlay** (Video-Feed ist noch TODO).
+Create two camera blocks with the matching names.  
+You should see a rotating **camera name overlay** (video feed is still TODO).
 
-## 5) Hinweise
-- **Keine C# 9 Features** verwendet → keine `IsExternalInit`-Probleme.
-- **Game-Thread** beachten: Spiel-API nur via `MyAPIGateway.Utilities.InvokeOnGameThread(...)` ansprechen.
+## 5) Notes
+- **No C# 9 features** are used → avoids `IsExternalInit` issues.
+- **Game thread** rule: only call the game API via `MyAPIGateway.Utilities.InvokeOnGameThread(...)`.
