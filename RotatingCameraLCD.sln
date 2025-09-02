@@ -1,0 +1,36 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34622.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RotatingCameraLCD.Client", "src\RotatingCameraLCD.Client\RotatingCameraLCD.Client.csproj", "{C599F783-D2A5-4E4B-B7EE-BDBCD5C0449E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RotatingCameraLCD.Shared", "src\RotatingCameraLCD.Shared\RotatingCameraLCD.Shared.csproj", "{310DACB0-373A-4757-A7D5-A0D08BA7F7A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RotatingCameraLCD.Tests", "tests\RotatingCameraLCD.Tests\RotatingCameraLCD.Tests.csproj", "{FE509294-96D5-42CC-AC50-358C6345E9F8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C599F783-D2A5-4E4B-B7EE-BDBCD5C0449E}.Debug|x64.ActiveCfg = Debug|x64
+		{C599F783-D2A5-4E4B-B7EE-BDBCD5C0449E}.Debug|x64.Build.0 = Debug|x64
+		{C599F783-D2A5-4E4B-B7EE-BDBCD5C0449E}.Release|x64.ActiveCfg = Release|x64
+		{C599F783-D2A5-4E4B-B7EE-BDBCD5C0449E}.Release|x64.Build.0 = Release|x64
+		{310DACB0-373A-4757-A7D5-A0D08BA7F7A3}.Debug|x64.ActiveCfg = Debug|x64
+		{310DACB0-373A-4757-A7D5-A0D08BA7F7A3}.Debug|x64.Build.0 = Debug|x64
+		{310DACB0-373A-4757-A7D5-A0D08BA7F7A3}.Release|x64.ActiveCfg = Release|x64
+		{310DACB0-373A-4757-A7D5-A0D08BA7F7A3}.Release|x64.Build.0 = Release|x64
+		{FE509294-96D5-42CC-AC50-358C6345E9F8}.Debug|x64.ActiveCfg = Debug|x64
+		{FE509294-96D5-42CC-AC50-358C6345E9F8}.Debug|x64.Build.0 = Debug|x64
+		{FE509294-96D5-42CC-AC50-358C6345E9F8}.Release|x64.ActiveCfg = Release|x64
+		{FE509294-96D5-42CC-AC50-358C6345E9F8}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8416FB70-CD89-49C9-9387-548F3C4F69B6}
+	EndGlobalSection
+EndGlobal

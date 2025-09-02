@@ -1,0 +1,15 @@
+<Project>
+  <PropertyGroup>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <Deterministic>true</Deterministic>
+    <RepositoryUrl>https://github.com/tniercke/RotatingCameraLCD</RepositoryUrl>
+  </PropertyGroup>
+
+  <!-- Optional deploy target uses SE_DIR if defined -->
+  <PropertyGroup>
+    <SE_DIR Condition="'$(SE_DIR)'!=''">$(SE_DIR)</SE_DIR>
+	<!-- <SE_DIR>C:\Steam\steamapps\common\SpaceEngineers</SE_DIR> -->
+	<!-- <SE_DIR>D:\Privat\RotatingCameraLCD\DeployFiles</SE_DIR> -->
+  </PropertyGroup>
+</Project>
